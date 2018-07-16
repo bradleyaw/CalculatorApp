@@ -1,17 +1,21 @@
 $("#calculate").click(function (event) {
     event.preventDefault();
 
-    var num1 = Number($("input[value='num1']").val())
-    var num2 = Number($("input[value='num2']").val())
+    var num1 = $("input[name='num1']").val()
+    var num2 = $("input[name='num2']").val()
+
     var results = $("#results");
-    
-    if (isNaN(num1) || isNaN(num2)) {
+    if  (num1.length == 0 || num2.length == 0) {
+        console.log("Make sure both inputs are numbers");
+        results.text("Make sure both inputs are numbers")
+    }
+    else if (isNaN(Number(num1)) || isNaN(Number(num2))) {
         console.log("Make sure both inputs are numbers");
         results.text("Make sure both inputs are numbers")
     }
     else {
         results.empty();
-        calculate(num1, num2);
+        calculate(Number(num1), Number(num2));
     }
 
     function calculate(num1, num2) {

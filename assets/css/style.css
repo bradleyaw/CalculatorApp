@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: grid;
+  }
+  
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+
+body { 
+    background-image: url('../images/Fisherman.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 15px auto;
+}
+
+p {
+    text-align: center;
+    margin: 8px auto;
+    padding-top: 8px;
+}
+
+main {
+    width: 450px;
+    margin: auto;
+}
+
+input {
+    width: 39%;
+    padding: 10px;
+}
+
+select {
+    width: 20.2%;
+    padding: 10px;
+}
+
+#calculate {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid white;
+    background-color: white;
+    font-size: 14px;
+
+}
+
+#calculate:hover {
+    border: 1px solid rgb(76, 165, 175);
+    background-color: rgb(76, 165, 175);
+    color: white;
+}
+
+.answer {
+    display: block;
+    height: 50px;
+    background-color: white;
+}
+
+#results {
+    display:block;
+    width: 100%;
+    text-align: center;
+}
+
+.ext-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 8px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
